@@ -1,5 +1,5 @@
 package example
 
-class PokerGame {
+class PokerGame(){
 
 }

@@ -27,7 +27,7 @@ object CardValue{
 
   def fromString(str: String)  =
     stringToCharValueMap.get(str)
-    .getOrElse(throw new IllegalArgumentException("Card value not valid."));
+    .getOrElse(throw new IllegalArgumentException(s"Card value not valid: $str ."));
 
 }
 
