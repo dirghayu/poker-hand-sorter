@@ -30,7 +30,10 @@ case class PlayerHand(cards: Seq[Card]){
 
   def compareTo(otherPlayerHand: PlayerHand): Int ={
     val myCombinationResult = PokerCombinationMatcher.evaluate(this)
+
+    println("Player 1 result: " + myCombinationResult )
     val  otherPlayerCombinationResult = PokerCombinationMatcher.evaluate(otherPlayerHand)
+    println("Player 2 result: " + otherPlayerCombinationResult )
     myCombinationResult.compareTo(otherPlayerCombinationResult)
   }
 

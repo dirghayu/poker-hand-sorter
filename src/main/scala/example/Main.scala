@@ -5,7 +5,9 @@ import collection.JavaConverters._
 object Main  {
 
   def main(args: Array[String]) = {
-    val bufferedSource = Source.fromFile(args(0))
+
+    println("args.szie" + args.size)
+    args.foreach(f=>println("f::"+f))
 
     val lines = readFile(args(0))
     val wordsPerLine = lines.map(str=> str.split(" ").map(_.trim).toSeq)

@@ -5,4 +5,4 @@ Download SBT
 
 sbt run <Filename>
 
-sbt run poker-hands.txt
+sbt "run poker-hands.txt"
